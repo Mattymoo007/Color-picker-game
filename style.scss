@@ -1,0 +1,68 @@
+// @import url(https://fonts.googleapis.com/css?family=Montserrat+Subrayada:regular, 700);
+
+body {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  max-width: 600px;
+  header {
+    background-color: #17a2b8;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  p {
+    border: 2px solid white;
+    padding: 5px;
+    i {font-size: 1em;}
+  }
+  button {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: black;
+    background-color: transparent;
+    border-radius: 0;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .reset:focus {
+    text-decoration: none;
+  }
+  .message {
+    margin: auto 0;
+    font-weight: bold;
+    color: #17a2b8;
+  }
+  .difficulty {
+    justify-content: space-between;
+    background-color: #fff;
+    .on {
+      text-decoration: none;
+      background-color: #17a2b8;
+      color: white;
+    }
+  }
+}
+
+.color {
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  grid-auto-rows: 1fr;
+  grid-gap: 15px;
+  .box {
+    padding-bottom: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+}
